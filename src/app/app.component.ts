@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'BMI2';
+  centimeters: number;
+  kilograms: number;
+  answer: number;
+
+  calculate(){
+    this.answer = this.kilograms / Math.pow (this.centimeters/100,2);
+  }
 }
